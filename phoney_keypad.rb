@@ -9,7 +9,7 @@ class PhoneKeypad
 		phone_number = validate_phone_number.to_s.split('-',2)
 		permute_number = phone_number[1].chomp.split('')
 		permute = Permutation.new(permute_number)
-		permute.conversion_to_alphabets	
+		permute.permute	
 	else
 	puts "Please Enter 8 digit only"
 	end
